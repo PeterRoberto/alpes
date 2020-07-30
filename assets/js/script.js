@@ -13,23 +13,24 @@
     };
     $('.phone').mask(behavior, options);
     $('.date').mask('00/00/0000');
-  })(); 
+})(); 
 
 
     
   
-//   (function() {
-//     'use strict'; 
-//     var morePosts = document.querySelectorAll('.mobile-attack .col-xs-12');  
-//     var ArrowClick = document.querySelector('.box-arrow-mobile .arrow');   
-//     ArrowClick.addEventListener('click', function() {
-//         for(var count = 0; count >= 0; count++) {
-//             if(count >= 1) {
-//                 morePosts.classList.toggle('itens-show'); 
-//             }
-//         }  
-//     });
-// })();  
+(function() {
+    'use strict'; 
+    var morePosts = document.querySelectorAll('.mobile-attack .getbox');  
+    var ArrowClick = document.querySelector('.box-arrow-mobile .arrow');   
+    ArrowClick.addEventListener('click', removeClass);
+
+    function removeClass(e) {  
+        e.preventDefault();  
+        for(var i = 0; i < morePosts.length; i++) {
+            morePosts[i].classList.toggle('box-hidden');       
+        }
+    }
+})();  
   
 
 

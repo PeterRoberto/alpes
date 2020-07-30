@@ -863,7 +863,9 @@ footer .copyright .box-infos-copy .box-slogan-image p {
     right: 25px;
     top: 95px;
   }
-  .saiba-mais article .box-arrow-mobile .arrow {
+  .saiba-mais article .box-arrow-mobile .arrow svg,
+  .saiba-mais article .box-arrow-mobile .arrow i {
     font-size: 22px;
+    color: black;
   }
 }
